@@ -1,0 +1,27 @@
+{
+  "name": "content-director",
+  "version": "1.0.0",
+  "description": "Multi-agent AI content strategy system for creator businesses",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "content-director": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "audit": "node index.js audit",
+    "research": "node index.js research",
+    "ideate": "node index.js ideate",
+    "script": "node index.js script",
+    "full": "node index.js full"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
